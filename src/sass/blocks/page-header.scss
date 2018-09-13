@@ -1,0 +1,60 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 34px 6px 15px;
+  background-color: $azure;
+
+  svg {
+    fill: $white-two;
+  }
+
+  &__title {
+    color: $white-two;
+    font-size: $font-size-big;
+    font-weight: normal;
+  }
+
+  &__menu {
+    cursor:pointer;
+    padding: 10px;
+    margin-right: 20px;
+    &:hover, &:active {
+      svg {
+        transition: fill 0.2s;
+        fill: $charcoal-grey
+      }
+    }
+  }
+
+  &__left, &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__reload {
+    padding: 10px;
+    margin-right: 29px;
+    &:hover, &:active {
+      svg {
+        transition: fill 0.2s;
+        fill: $charcoal-grey
+      }
+    }
+  }
+
+  &__options {
+    padding: 7px;
+    cursor:pointer;
+    &:hover, &:active {
+      svg {
+        transition: fill 0.2s;
+        fill: $charcoal-grey
+      }
+    }
+  }
+
+
+
+
+}

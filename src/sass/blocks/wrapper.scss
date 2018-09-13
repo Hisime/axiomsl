@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  min-width: 1000px;
+
+  &__left {
+    width: 257px;
+  }
+
+  &__right {
+    flex-grow: 1;
+    background-color: $white;
+  }
+
+}

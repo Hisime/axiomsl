@@ -1,0 +1,148 @@
+.person {
+  position: relative;
+  border-radius: $border-radius;
+
+  &__face {
+    padding: 13px 11px 10px 14px;
+    height: 245px;
+    background-image: url(../img/rectangle-97@3x.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__name {
+    margin-left: 11px;
+    font-size: $font-size-large;
+    color: $white-two;
+    opacity: 0.87;
+    letter-spacing: -0.4px;
+  }
+
+  &__edit-panel {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__edit-panel-right {
+    display: flex;
+  }
+
+  &__edit {
+    cursor: pointer;
+    position: absolute;
+    bottom: -26px;
+    right: 11px;
+    width: 56px;
+    height: 56px;
+    background-color: $warm-pink;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+    transition: all 0.2s;
+
+    &:hover, &:active {
+      opacity: 0.8;
+    }
+
+    svg {
+      fill: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__arrow-back, &__create, &__options {
+    padding: 10px;
+    cursor:pointer;
+    svg {
+      fill: $white-two;
+    }
+    &:hover {
+      transition: background-color 0.2s;
+      background-color: rgba(255, 255, 255, 0.5);
+      svg {
+        transition: fill 0.2s;
+        fill: $charcoal-grey;
+      }
+    }
+  }
+
+  &__info {
+    margin-top: 44px;
+    padding-left: 82px;
+  }
+
+  &__info-row {
+    position: relative;
+    margin-bottom: 36px;
+  }
+
+  &__phones {
+    position: relative;
+    margin-bottom: 16px;
+    border-bottom: 1px solid $white-five;
+    &::after {
+      content: '';
+      width: 18px;
+      height: 18px;
+      background-image: url(../img/call.svg);
+      position: absolute;
+      top: 10px;
+      left: -50px;
+    }
+  }
+
+  &__mails {
+    position: relative;
+    &::after {
+      content: '';
+      width: 20px;
+      height: 16px;
+      background-image: url(../img/email.svg);
+      position: absolute;
+      top: 11px;
+      left: -50px;
+    }
+  }
+
+  &__hangout {
+    position: absolute;
+    padding: 10px;
+    cursor:pointer;
+    transition: opacity 0.2s;
+    right: 12px;
+    top: -4px;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__address {
+    position: relative;
+    &::after {
+      content: '';
+      width: 14px;
+      height: 20px;
+      background-image: url(../img/place.svg);
+      position: absolute;
+      top: 14px;
+      left: -48px;
+    }
+  }
+
+  &__data {
+    font-size: $font-size-middle2;
+    color: $charcoal-grey;
+    letter-spacing: -0.1px;
+    margin-bottom: 4px;
+  }
+
+  &__label {
+    color: $warm-grey-two;
+    font-size: $font-size-small;
+  }
+
+}
